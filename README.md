@@ -311,6 +311,133 @@ nums.copy()
 
 <hr>
 
+<h2>📌 4.3 Tuple (<code>tuple</code>) — Immutable, Ordered Sequence</h2>
+
+<h3>🔹 Definition</h3>
+<p>
+A <strong>tuple</strong> is an <strong>ordered collection</strong> of elements that
+<strong>cannot be changed (immutable)</strong> after creation.
+Tuples are <strong>faster than lists</strong> and can be used as
+<strong>dictionary keys</strong> if they contain only hashable items.
+</p>
+
+<h3>🔹 Key Characteristics</h3>
+<ul>
+  <li>🔒 <strong>Immutable</strong> (cannot modify elements)</li>
+  <li>📍 <strong>Ordered</strong> (index-based access)</li>
+  <li>⚡ <strong>Efficient &amp; memory-friendly</strong></li>
+  <li>🔑 Can be used as <strong>dictionary keys</strong></li>
+</ul>
+
+<h3>🔹 Common Methods</h3>
+
+<pre><code>t = (1, 2, 3, 2)
+
+t.index(2)   # 1 → first position of value 2
+t.count(2)   # 2 → number of times 2 appears
+</code></pre>
+
+<h3>🔹 Built-in Functions</h3>
+
+<pre><code>len(t)       # 4 → total elements
+sorted(t)    # [1, 2, 2, 3] → returns a LIST
+</code></pre>
+
+<hr>
+
+<h2>📌 4.4 Set (<code>set</code>) — Mutable, Unordered Collection of Unique Items</h2>
+
+<h3>🔹 Definition</h3>
+<p>
+A <strong>set</strong> is an <strong>unordered collection</strong> that stores
+<strong>only unique elements</strong>. It is optimized for
+<strong>fast membership testing</strong> and
+<strong>mathematical set operations</strong>.
+</p>
+
+<h3>🔹 Key Characteristics</h3>
+<ul>
+  <li>🔁 <strong>Mutable</strong> (can add/remove elements)</li>
+  <li>❌ <strong>No duplicate values</strong></li>
+  <li>🚀 <strong>Fast lookup</strong></li>
+  <li>🔢 <strong>No indexing</strong></li>
+</ul>
+
+<h3>🔹 Adding &amp; Removing Elements</h3>
+
+<pre><code>s = {1, 2, 3}
+
+s.add(4)        # {1, 2, 3, 4}
+s.remove(2)     # removes 2 (error if not found)
+s.discard(5)    # no error if element not found
+s.pop()         # removes an arbitrary element
+s.clear()       # empties the set
+</code></pre>
+
+<h3>🔹 Set Operations</h3>
+
+<pre><code>a = {1, 2, 3}
+b = {3, 4, 5}
+
+a.union(b)                  # {1, 2, 3, 4, 5}
+a.intersection(b)           # {3}
+a.difference(b)             # {1, 2}
+a.symmetric_difference(b)   # {1, 2, 4, 5}
+</code></pre>
+
+<h3>🔹 Set Comparisons</h3>
+
+<pre><code>a.issubset(b)
+a.issuperset(b)
+a.isdisjoint(b)
+</code></pre>
+
+<hr>
+
+<h2>📌 4.5 Dictionary (<code>dict</code>) — Mutable Mapping of Key-Value Pairs</h2>
+
+<h3>🔹 Definition</h3>
+<p>
+A <strong>dictionary</strong> stores data as <strong>key–value pairs</strong>, where
+<strong>keys are unique and immutable</strong>, and values can be any data type.
+Dictionaries are <strong>highly efficient</strong> for data retrieval.
+</p>
+
+<h3>🔹 Key Characteristics</h3>
+<ul>
+  <li>🔑 <strong>Unique keys</strong></li>
+  <li>🔄 <strong>Mutable</strong></li>
+  <li>⚡ <strong>Fast lookup</strong></li>
+  <li>🧩 <strong>Stores data in key–value pairs</strong></li>
+</ul>
+
+<h3>🔹 Accessing Data</h3>
+
+<pre><code>d = {"name": "Alice", "age": 25}
+
+d.get("age")           # 25
+d.get("salary", 0)     # 0 (avoids KeyError)
+
+d.keys()               # dict_keys(['name', 'age'])
+d.values()             # dict_values(['Alice', 25])
+d.items()              # dict_items([('name', 'Alice'), ('age', 25)])
+</code></pre>
+
+<h3>🔹 Modifying Dictionary</h3>
+
+<pre><code>d.update({"age": 26, "city": "Paris"})
+d.pop("age")           # removes key and returns value
+d.popitem()            # removes last inserted item
+
+d.setdefault("country", "France")
+</code></pre>
+
+<h3>🔹 Creating a Dictionary</h3>
+
+<pre><code>dict.fromkeys(["a", "b", "c"], 0)
+# {'a': 0, 'b': 0, 'c': 0}
+</code></pre>
+
 
 
 
