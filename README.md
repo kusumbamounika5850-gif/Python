@@ -236,10 +236,4 @@ print("z" in text)
 
 <hr>
 
-<h2>Summary</h2>
-<ul>
-  <li>Variables store data</li>
-  <li>Data types define the type of data</li>
-  <li>Operators perform operations</li>
-  <li>Expressions combine values and operators</li>
-</ul>
+
