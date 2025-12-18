@@ -142,4 +142,175 @@ Operators are symbols that perform operations on variables and values.
 
 <hr>
 
+<h1>📘 Python Built-in Functions, Libraries & Data Structures</h1>
+
+<hr>
+
+<h2>3. Built-in Functions and Libraries</h2>
+
+<h3>🔹 Built-in Functions</h3>
+<p><strong>Definition:</strong><br>
+Built-in functions are functions that are <strong>always available in Python</strong>. 
+They can be used <strong>without importing any module</strong> and provide core functionality.</p>
+
+<ul>
+  <li>🖨️ <strong>print()</strong> – Displays output</li>
+  <li>📏 <strong>len()</strong> – Returns number of elements</li>
+  <li>🔍 <strong>type()</strong> – Returns data type</li>
+  <li>🔢 <strong>range()</strong> – Generates a sequence of numbers</li>
+  <li>⬆️ <strong>max()</strong> / ⬇️ <strong>min()</strong> – Finds maximum or minimum value</li>
+</ul>
+
+<pre><code>
+print("Hello, Python")
+len("Python")
+type(10)
+list(range(1,5))
+max([4, 8, 2])
+</code></pre>
+
+---
+
+<h3>🔹 Libraries (Modules)</h3>
+<p><strong>Definition:</strong><br>
+Libraries (or modules) are <strong>collections of pre-written code</strong> that extend Python’s functionality.
+They must be imported before use.</p>
+
+<ul>
+  <li>📐 <strong>math</strong> – Mathematical operations</li>
+  <li>🎲 <strong>random</strong> – Random number generation</li>
+  <li>🗂️ <strong>os</strong> – Operating system interaction</li>
+</ul>
+
+<pre><code>
+import math
+math.sqrt(16)
+
+import random
+random.randint(1, 10)
+
+import os
+os.getcwd()
+</code></pre>
+
+<hr>
+
+<h2>4. Sequence and Mapping Data Structures</h2>
+
+<h2>4.1 String (<code>str</code>) – Immutable Sequence of Characters</h2>
+
+<p><strong>Definition:</strong><br>
+A string is a sequence of characters enclosed in quotes. 
+Strings are <strong>immutable</strong>, meaning their content cannot be changed after creation.</p>
+
+<h3>✨ String Methods</h3>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Methods</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>🔠 Formatting</td>
+    <td>upper(), lower(), capitalize(), title()</td>
+    <td>Change text case</td>
+  </tr>
+  <tr>
+    <td>🔍 Searching</td>
+    <td>find(), index(), count()</td>
+    <td>Find substrings</td>
+  </tr>
+  <tr>
+    <td>✅ Checking</td>
+    <td>isalpha(), isdigit(), isalnum(), isspace()</td>
+    <td>Validate string content</td>
+  </tr>
+  <tr>
+    <td>✂️ Manipulation</td>
+    <td>strip(), lstrip(), rstrip()</td>
+    <td>Remove whitespace</td>
+  </tr>
+  <tr>
+    <td>🔗 Split / Join</td>
+    <td>split(), join()</td>
+    <td>Split or combine strings</td>
+  </tr>
+  <tr>
+    <td>🔁 Replace</td>
+    <td>replace()</td>
+    <td>Replace substring</td>
+  </tr>
+</table>
+
+<pre><code>
+text = "hello world"
+text.upper()
+text.find("world")
+text.isalpha()
+text.strip()
+text.split(" ")
+"-".join(["2025","01","10"])
+text.replace("world", "Python")
+</code></pre>
+
+<hr>
+
+<h2>4.2 List (<code>list</code>) – Mutable Ordered Sequence</h2>
+
+<p><strong>Definition:</strong><br>
+A list is a mutable and ordered collection of elements. 
+Items can be added, removed, or modified.</p>
+
+<h3>📋 List Methods</h3>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Methods</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>➕ Adding</td>
+    <td>append(), insert(), extend()</td>
+    <td>Add elements to list</td>
+  </tr>
+  <tr>
+    <td>➖ Removing</td>
+    <td>remove(), pop(), clear()</td>
+    <td>Remove elements</td>
+  </tr>
+  <tr>
+    <td>🔃 Ordering</td>
+    <td>sort(), reverse()</td>
+    <td>Reorder list</td>
+  </tr>
+  <tr>
+    <td>🔎 Querying</td>
+    <td>index(), count()</td>
+    <td>Search list</td>
+  </tr>
+  <tr>
+    <td>📄 Copying</td>
+    <td>copy()</td>
+    <td>Create shallow copy</td>
+  </tr>
+</table>
+
+<pre><code>
+nums = [1, 2, 3]
+nums.append(4)
+nums.insert(1, 10)
+nums.extend([5, 6])
+nums.remove(10)
+nums.pop()
+nums.sort()
+nums.reverse()
+nums.copy()
+</code></pre>
+
+<hr>
+
+<p align="center"><strong>🚀 Happy Coding with Python!</strong></p>
+
 
