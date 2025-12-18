@@ -10,7 +10,6 @@
         <h1>Python Skills Portfolio</h1>
         <p>A summary of practiced skills and theoretical understanding of key Python concepts.</p>
     </header>
-
     <hr>
 
     <!-- SECTION I: FUNDAMENTALS -->
