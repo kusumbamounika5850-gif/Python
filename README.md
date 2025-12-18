@@ -236,4 +236,168 @@ print("z" in text)
 
 <hr>
 
+<h2>3. Built-in Functions and Libraries</h2>
+
+<h3>Built-in Functions</h3>
+<p>
+<b>Definition:</b> Built-in functions are functions that are always available in Python
+and can be used without importing any module. They provide basic and essential operations.
+</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+<tr>
+<th>Function</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>print()</td>
+<td>Displays output on the screen</td>
+<td><code>print("Hello Python")</code></td>
+</tr>
+<tr>
+<td>len()</td>
+<td>Returns the number of items in an object</td>
+<td><code>len("Python") → 6</code></td>
+</tr>
+<tr>
+<td>type()</td>
+<td>Returns the data type of a variable</td>
+<td><code>type(10) → int</code></td>
+</tr>
+<tr>
+<td>range()</td>
+<td>Generates a sequence of numbers</td>
+<td><code>list(range(1,5)) → [1,2,3,4]</code></td>
+</tr>
+<tr>
+<td>max()</td>
+<td>Returns the largest value</td>
+<td><code>max(4,9,2) → 9</code></td>
+</tr>
+<tr>
+<td>min()</td>
+<td>Returns the smallest value</td>
+<td><code>min(4,9,2) → 2</code></td>
+</tr>
+</table>
+
+<h3>Libraries (Modules)</h3>
+<p>
+<b>Definition:</b> Libraries (or modules) are collections of pre-written Python code
+that extend Python’s functionality. They must be imported before use.
+</p>
+
+<pre><code>import math
+print(math.sqrt(16))</code></pre>
+
+<pre><code>import random
+print(random.randint(1,10))</code></pre>
+
+<pre><code>import os
+print(os.getcwd())</code></pre>
+
+<hr>
+
+<h2>4. Sequence and Mapping Data Structures</h2>
+
+<h3>4.1 String (str) – Immutable Sequence of Characters</h3>
+<p>
+<b>Definition:</b> A string is a sequence of characters enclosed in quotes.
+Strings are immutable, meaning their content cannot be changed after creation.
+</p>
+
+<pre><code>text = "python"</code></pre>
+
+<h4>String Methods</h4>
+
+<h4>Formatting</h4>
+<ul>
+<li><b>upper()</b> – Converts to uppercase → <code>"python".upper()</code></li>
+<li><b>lower()</b> – Converts to lowercase → <code>"PyThOn".lower()</code></li>
+<li><b>capitalize()</b> – Capitalizes first letter → <code>"python".capitalize()</code></li>
+<li><b>title()</b> – Capitalizes each word → <code>"hello world".title()</code></li>
+</ul>
+
+<h4>Searching</h4>
+<ul>
+<li><b>find()</b> – Returns index or -1 → <code>"python".find("t")</code></li>
+<li><b>index()</b> – Returns index or error → <code>"python".index("p")</code></li>
+<li><b>count()</b> – Counts occurrences → <code>"banana".count("a")</code></li>
+</ul>
+
+<h4>Checking</h4>
+<ul>
+<li><b>startswith()</b> → <code>"python".startswith("py")</code></li>
+<li><b>endswith()</b> → <code>"python".endswith("on")</code></li>
+</ul>
+
+<h4>Validation</h4>
+<ul>
+<li><b>isalpha()</b> → <code>"Hello".isalpha()</code></li>
+<li><b>isdigit()</b> → <code>"123".isdigit()</code></li>
+<li><b>isalnum()</b> → <code>"abc123".isalnum()</code></li>
+<li><b>isspace()</b> → <code>"   ".isspace()</code></li>
+</ul>
+
+<h4>Manipulation</h4>
+<ul>
+<li><b>strip()</b> → <code>" hi ".strip()</code></li>
+<li><b>lstrip()</b> → <code>" hi".lstrip()</code></li>
+<li><b>rstrip()</b> → <code>"hi ".rstrip()</code></li>
+</ul>
+
+<h4>Splitting & Joining</h4>
+
+<pre><code>"apple,banana,orange".split(",")</code></pre>
+
+<pre><code>"-".join(["2025","01","01"])</code></pre>
+
+<h4>Replacement</h4>
+
+<pre><code>"Hello World".replace("World","Python")</code></pre>
+
+<hr>
+
+<h3>4.2 List (list) – Mutable, Ordered Sequence</h3>
+
+<p>
+<b>Definition:</b> A list is an ordered collection of items that is mutable,
+meaning elements can be modified.
+</p>
+
+<pre><code>numbers = [1, 2, 3]</code></pre>
+
+<h4>Adding Elements</h4>
+<ul>
+<li><b>append()</b> → <code>[1,2].append(3)</code></li>
+<li><b>insert()</b> → <code>[1,3].insert(1,2)</code></li>
+<li><b>extend()</b> → <code>[1,2].extend([3,4])</code></li>
+</ul>
+
+<h4>Removing Elements</h4>
+<ul>
+<li><b>remove()</b> → <code>[1,2,3].remove(2)</code></li>
+<li><b>pop()</b> → <code>[1,2,3].pop()</code></li>
+<li><b>clear()</b> → <code>[1,2].clear()</code></li>
+</ul>
+
+<h4>Ordering</h4>
+<ul>
+<li><b>sort()</b> → <code>[3,1,2].sort()</code></li>
+<li><b>reverse()</b> → <code>[1,2,3].reverse()</code></li>
+</ul>
+
+<h4>Querying</h4>
+<ul>
+<li><b>index()</b> → <code>[10,20,30].index(20)</code></li>
+<li><b>count()</b> → <code>[1,1,2].count(1)</code></li>
+</ul>
+
+<h4>Copying</h4>
+
+<pre><code>list1 = [1,2,3]
+list2 = list1.copy()</code></pre>
+
+
 
