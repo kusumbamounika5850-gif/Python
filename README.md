@@ -142,11 +142,4 @@ Operators are symbols that perform operations on variables and values.
 
 <hr>
 
-<h2>✅ Summary</h2>
-<ul>
-  <li>Strong understanding of Python fundamentals</li>
-  <li>Clear knowledge of data types, variables, and operators</li>
-  <li>Prepared for real-world Python programming tasks</li>
-</ul>
 
-<p><em>End of Python Fundamentals</em></p>
