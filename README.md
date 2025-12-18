@@ -438,6 +438,176 @@ d.setdefault("country", "France")
 # {'a': 0, 'b': 0, 'c': 0}
 </code></pre>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Control Flow & Functions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .icon {
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🧭 Python Control Flow & Functions</h1>
+
+<p>Control flow determines <strong>the order in which a program’s instructions are executed</strong>. It allows a program to <strong>make decisions</strong> and <strong>repeat actions</strong> when needed.</p>
+
+<h2>🔹 1. Conditional Statements</h2>
+<p>Conditional statements help a program <strong>decide what to do</strong> based on conditions that are either <strong>True</strong> or <strong>False</strong>.</p>
+
+<h3>✅ if / elif / else</h3>
+<p>Used to <strong>check conditions</strong> and execute different blocks of code.</p>
+<ul>
+    <li><code>if</code> → checks the first condition</li>
+    <li><code>elif</code> → checks another condition if the previous one is false</li>
+    <li><code>else</code> → runs when all conditions are false</li>
+</ul>
+
+<pre><code>age = 18
+
+if age &lt; 18:
+    print("You are a minor.")
+elif age == 18:
+    print("You just became an adult!")
+else:
+    print("You are an adult.")</code></pre>
+
+<h3>⛔ break</h3>
+<p>Used <strong>inside loops only</strong> (<code>for</code> or <code>while</code>). It <strong>immediately stops the loop</strong>.</p>
+
+<pre><code>for number in range(1, 6):
+    if number == 3:
+        break
+    print(number)</code></pre>
+
+<p>Output:</p>
+<pre><code>1
+2</code></pre>
+
+<h2>🔁 2. Control Statements (Loops)</h2>
+<p>Loops allow code to <strong>run repeatedly</strong> without writing it again and again.</p>
+
+<h3>🔄 for Loop</h3>
+<p>Used when you <strong>know how many times</strong> you want to loop. Works with lists, strings, ranges, tuples, etc.</p>
+
+<pre><code>for item in [1, 2, 3]:
+    print(item)</code></pre>
+
+<p>Output:</p>
+<pre><code>1
+2
+3</code></pre>
+
+<h3>🔂 while Loop</h3>
+<p>Used when the number of repetitions is <strong>unknown</strong>. Runs <strong>as long as a condition remains True</strong>.</p>
+
+<pre><code>count = 0
+while count &lt; 5:
+    print(count)
+    count += 1</code></pre>
+
+<p>Output:</p>
+<pre><code>0
+1
+2
+3
+4</code></pre>
+
+<h2>🧠 III. Functions and Advanced Techniques</h2>
+
+<h3>🔹 1. Defining and Using Functions</h3>
+<p>A <strong>function</strong> is a reusable block of code that performs a specific task.</p>
+
+<h4>🧩 def Keyword</h4>
+<p>Used to <strong>define a function</strong>. Functions make code <strong>organized, reusable, and readable</strong>.</p>
+
+<pre><code>def greet(name):
+    """This function greets the person passed in as a parameter."""
+    return f"Hello, {name}!"</code></pre>
+
+<p>Usage:</p>
+<pre><code>print(greet("Alex"))</code></pre>
+
+<p>Output:</p>
+<pre><code>Hello, Alex!</code></pre>
+
+<h3>🔁 Recursion: Solving Problems by Self-Reference</h3>
+<p>Recursion is when a <strong>function calls itself</strong> to solve a problem.</p>
+
+<h4>🧱 Key Components</h4>
+<ul>
+    <li><strong>Base Case:</strong> Stops the recursion to prevent infinite loops.</li>
+    <li><strong>Recursive Step:</strong> Calls the function again with a smaller/simpler input.</li>
+</ul>
+
+<h4>📐 Example: Factorial</h4>
+<p>The factorial of a number <code>n</code> is:</p>
+<pre><code>n! = n × (n−1)!
+0! = 1</code></pre>
+
+<pre><code>def factorial(n):
+    # Base Case
+    if n == 0:
+        return 1
+    # Recursive Step
+    else:
+        return n * factorial(n - 1)</code></pre>
+
+<p>Example Call:</p>
+<pre><code>factorial(4)</code></pre>
+
+<p>Step by step:</p>
+<pre><code>4 × factorial(3)
+4 × (3 × factorial(2))
+4 × (3 × (2 × factorial(1)))
+4 × (3 × (2 × (1 × factorial(0))))
+4 × (3 × (2 × (1 × 1)))
+= 24</code></pre>
+
+<h3>✨ Summary</h3>
+<ul>
+    <li>🧭 Control flow controls execution order</li>
+    <li>🔹 Conditionals make decisions</li>
+    <li>🔁 Loops repeat actions</li>
+    <li>🧠 Functions organize code</li>
+    <li>🔄 Recursion solves problems step-by-step</li>
+</ul>
+
+</body>
+</html>
+
 
 
 
