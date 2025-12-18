@@ -596,17 +596,6 @@ while count &lt; 5:
 4 × (3 × (2 × (1 × 1)))
 = 24</code></pre>
 
-<h3>✨ Summary</h3>
-<ul>
-    <li>🧭 Control flow controls execution order</li>
-    <li>🔹 Conditionals make decisions</li>
-    <li>🔁 Loops repeat actions</li>
-    <li>🧠 Functions organize code</li>
-    <li>🔄 Recursion solves problems step-by-step</li>
-</ul>
-
-</body>
-</html>
 
 
 
