@@ -1,216 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Python Fundamentals</title>
+<h1>🐍 Python Skills Portfolio</h1>
+<p><strong>Fundamentals Overview</strong></p>
 
-<style>
-    body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: #f4f6f9;
-        margin: 0;
-        padding: 20px;
-        line-height: 1.6;
-    }
+<p>
+This document outlines my practical experience and theoretical understanding of essential
+Python programming concepts. It is structured for clarity, quick review, and portfolio presentation.
+</p>
 
-    h1, h2, h3, h4 {
-        color: #2c3e50;
-    }
+<hr>
 
-    h1 {
-        text-align: center;
-        background: #2c3e50;
-        color: white;
-        padding: 15px;
-        border-radius: 8px;
-    }
+<h2>📌 I. Python Fundamentals</h2>
 
-    h2 {
-        margin-top: 30px;
-        padding: 10px;
-        background: #ecf0f1;
-        border-left: 6px solid #3498db;
-        border-radius: 4px;
-    }
+<h2>1️⃣ Core Data Types and Variables</h2>
 
-    h3 {
-        margin-top: 20px;
-        color: #2980b9;
-    }
+<h3>🔹 Data Types</h3>
+<p><strong>Definition:</strong><br>
+Data types classify the kind of data a variable can store.
+</p>
 
-    h4 {
-        color: #34495e;
-    }
-
-    .card {
-        background: white;
-        border: 1px solid #dcdcdc;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 20px 0;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    pre {
-        background: #1e1e1e;
-        color: #dcdcdc;
-        padding: 15px;
-        border-radius: 6px;
-        overflow-x: auto;
-    }
-
-    code {
-        color: #e67e22;
-        font-weight: bold;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        background: white;
-    }
-
-    th {
-        background: #3498db;
-        color: white;
-        padding: 10px;
-    }
-
-    td {
-        padding: 8px;
-        border: 1px solid #ccc;
-        text-align: center;
-    }
-
-    ul li {
-        margin: 6px 0;
-    }
-
-    .icon {
-        font-size: 1.2em;
-        margin-right: 6px;
-    }
-
-    .note {
-        background: #eaf6ff;
-        border-left: 5px solid #3498db;
-        padding: 10px;
-        margin: 15px 0;
-        border-radius: 4px;
-    }
-
-    hr {
-        border: none;
-        height: 1px;
-        background: #ccc;
-        margin: 30px 0;
-    }
-</style>
-</head>
-
-<body>
-
-<h1>🐍 Python Programming Guide</h1>
-
-<div class="card">
-<h2>📘 I. Python Fundamentals</h2>
-
-<h3>🔹 Variables</h3>
-<p><strong>Variable</strong> stores a value in memory. Python detects the data type automatically.</p>
-
-<pre><code>
-x = 10
-name = "Alice"
-</code></pre>
-
-<h3>📦 Core Data Types</h3>
-
-<table>
-<tr><th>Type</th><th>Description</th><th>Example</th></tr>
-<tr><td>int</td><td>Whole numbers</td><td>10</td></tr>
-<tr><td>float</td><td>Decimal numbers</td><td>3.14</td></tr>
-<tr><td>str</td><td>Text</td><td>"Hello"</td></tr>
-<tr><td>bool</td><td>True / False</td><td>True</td></tr>
-<tr><td>list</td><td>Mutable sequence</td><td>[1,2,3]</td></tr>
-<tr><td>tuple</td><td>Immutable sequence</td><td>(1,2)</td></tr>
-<tr><td>set</td><td>Unique values</td><td>{1,2}</td></tr>
-<tr><td>dict</td><td>Key-value pairs</td><td>{"a":1}</td></tr>
-</table>
-</div>
-
-<div class="card">
-<h2>⚙️ II. Operators & Expressions</h2>
-
-<h3>➕ Arithmetic Operators</h3>
-
-<pre><code>
-a = 10
-b = 3
-print(a + b)
-print(a ** b)
-</code></pre>
-
-<h3>🔍 Comparison Operators</h3>
-<pre><code>
-x = 5
-y = 10
-print(x < y)
-</code></pre>
-
-<h3>🔗 Logical Operators</h3>
-<pre><code>
-print(a > 3 and b > 2)
-</code></pre>
-</div>
-
-<div class="card">
-<h2>📚 III. Built-in Functions & Libraries</h2>
-
-<h3>🧰 Built-in Functions</h3>
 <ul>
-<li>🖨️ <code>print()</code></li>
-<li>📏 <code>len()</code></li>
-<li>🔎 <code>type()</code></li>
+  <li>🔢 <strong>int</strong> – Whole numbers (e.g., counting items)</li>
+  <li>📐 <strong>float</strong> – Decimal numbers (e.g., prices, measurements)</li>
+  <li>📝 <strong>str</strong> – Text data (e.g., names, messages)</li>
+  <li>✅ <strong>bool</strong> – Logical values (<code>True</code> or <code>False</code>)</li>
 </ul>
 
-<h3>📦 Modules</h3>
-<pre><code>
-import math
-print(math.sqrt(16))
-</code></pre>
-</div>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+  <li>Python is <strong>dynamically typed</strong>.</li>
+  <li>Data types are determined during program execution.</li>
+</ul>
 
-<div class="card">
-<h2>🧠 IV. Control Flow</h2>
+<p><strong>Examples:</strong></p>
+<ul>
+  <li>User age stored as an integer</li>
+  <li>Product price stored as a float</li>
+  <li>Username stored as a string</li>
+  <li>Login status stored as a boolean</li>
+</ul>
 
-<h3>❓ Conditional Statements</h3>
-<pre><code>
-age = 18
-if age >= 18:
-    print("Adult")
-else:
-    print("Minor")
-</code></pre>
+<hr>
 
-<h3>🔄 Loops</h3>
-<pre><code>
-for i in range(3):
-    print(i)
-</code></pre>
-</div>
+<h3>🔹 Variables</h3>
+<p><strong>Definition:</strong><br>
+Variables are named storage locations used to hold data values.
+</p>
 
-<div class="card">
-<h2>🛠️ V. Functions</h2>
-<pre><code>
-def greet(name):
-    return "Hello " + name
-</code></pre>
-</div>
+<ul>
+  <li>Created automatically when a value is assigned</li>
+  <li>No explicit type declaration required</li>
+  <li>Values can change during execution</li>
+</ul>
 
-<div class="note">
-✅ <strong>Tip:</strong> This layout is ideal for notes, tutorials, or PDFs.
-</div>
+<p><strong>Examples:</strong></p>
+<ul>
+  <li>Storing a student's score</li>
+  <li>Updating a counter value</li>
+</ul>
 
-</body>
-</html>
+<hr>
+
+<h3>🔹 Type Conversion (Casting)</h3>
+<p><strong>Definition:</strong><br>
+Type conversion is the process of changing one data type into another.
+</p>
+
+<ul>
+  <li><code>int()</code> – Convert to integer</li>
+  <li><code>float()</code> – Convert to decimal number</li>
+  <li><code>str()</code> – Convert to string</li>
+  <li><code>list()</code>, <code>tuple()</code> – Convert to collections</li>
+</ul>
+
+<p><strong>Why It’s Important:</strong></p>
+<ul>
+  <li>Required when mixing data types</li>
+  <li>Prevents runtime errors</li>
+</ul>
+
+<p><strong>Examples:</strong></p>
+<ul>
+  <li>Converting user input into a number</li>
+  <li>Displaying numbers as text in messages</li>
+</ul>
+
+<hr>
+
+<h2>2️⃣ Operators and Expressions</h2>
+<p>
+Operators are symbols that perform operations on variables and values.
+</p>
+
+<h3>➕ Arithmetic Operators</h3>
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>+</td><td>Addition</td></tr>
+  <tr><td>-</td><td>Subtraction</td></tr>
+  <tr><td>*</td><td>Multiplication</td></tr>
+  <tr><td>/</td><td>Division</td></tr>
+  <tr><td>%</td><td>Modulus</td></tr>
+  <tr><td>**</td><td>Exponentiation</td></tr>
+  <tr><td>//</td><td>Floor Division</td></tr>
+</table>
+
+<h3>⚖️ Comparison Operators</h3>
+<table>
+  <tr><th>Operator</th><th>Meaning</th></tr>
+  <tr><td>==</td><td>Equal to</td></tr>
+  <tr><td>!=</td><td>Not equal to</td></tr>
+  <tr><td>&gt;</td><td>Greater than</td></tr>
+  <tr><td>&lt;</td><td>Less than</td></tr>
+  <tr><td>&gt;=</td><td>Greater than or equal to</td></tr>
+  <tr><td>&lt;=</td><td>Less than or equal to</td></tr>
+</table>
+
+<h3>🔗 Logical Operators</h3>
+<ul>
+  <li><strong>and</strong> – All conditions must be true</li>
+  <li><strong>or</strong> – At least one condition must be true</li>
+  <li><strong>not</strong> – Reverses a condition</li>
+</ul>
+
+<h3>📝 Assignment Operators</h3>
+<ul>
+  <li><code>=</code> Assign value</li>
+  <li><code>+=</code> Add and assign</li>
+  <li><code>-=</code> Subtract and assign</li>
+  <li><code>*=</code> Multiply and assign</li>
+</ul>
+
+<h3>🧠 Identity Operators</h3>
+<ul>
+  <li><code>is</code> – Same memory location</li>
+  <li><code>is not</code> – Different memory locations</li>
+</ul>
+
+<h3>📦 Membership Operators</h3>
+<ul>
+  <li><code>in</code> – Value exists in a sequence</li>
+  <li><code>not in</code> – Value does not exist in a sequence</li>
+</ul>
+
+<hr>
+
+<h2>✅ Summary</h2>
+<ul>
+  <li>Strong understanding of Python fundamentals</li>
+  <li>Clear knowledge of data types, variables, and operators</li>
+  <li>Prepared for real-world Python programming tasks</li>
+</ul>
+
+<p><em>End of Python Fundamentals</em></p>
