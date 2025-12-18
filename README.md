@@ -526,6 +526,118 @@ dict.fromkeys(keys, 0)</code></pre>
   </tr>
 </table>
 
+<h2>📌 II. Control Flow and Logic</h2>
+
+<p>
+🔁 <strong>Control flow</strong> determines the order in which a program’s instructions
+are executed. It helps a program make decisions, repeat tasks, or stop execution.
+</p>
+
+<hr>
+
+<h3>🔹 1. Conditional Statements</h3>
+
+<p>
+🤔 Conditional statements allow the program to execute different code blocks
+based on whether a condition is <strong>True</strong> or <strong>False</strong>.
+</p>
+
+<h4>✅ if / elif / else</h4>
+
+<ul>
+  <li>🟢 <strong>if</strong> – Executes when the condition is true</li>
+  <li>🟡 <strong>elif</strong> – Checks additional conditions</li>
+  <li>🔴 <strong>else</strong> – Executes when all conditions are false</li>
+</ul>
+
+<pre><code>
+age = 18
+
+if age &lt; 18:
+    print("You are a minor.")
+elif age == 18:
+    print("You are exactly 18 years old.")
+else:
+    print("You are an adult.")
+</code></pre>
+
+<h4>⛔ break Statement</h4>
+
+<p>
+The <strong>break</strong> statement is used inside loops to immediately terminate
+the loop when a specific condition is met.
+</p>
+
+<pre><code>
+for number in range(1, 6):
+    if number == 4:
+        break
+    print(number)
+</code></pre>
+
+<hr>
+
+<h3>🔹 2. Control Statements (Loops)</h3>
+
+<h4>🔄 for Loop</h4>
+
+<p>
+A <strong>for loop</strong> is used to iterate over a sequence such as a list, tuple,
+string, or range. It is commonly used when the number of iterations is known.
+</p>
+
+<pre><code>
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(fruit)
+</code></pre>
+
+<h4>♻️ while Loop</h4>
+
+<p>
+A <strong>while loop</strong> executes a block of code as long as a given condition
+remains true. It is useful when the number of iterations is not known beforehand.
+</p>
+
+<pre><code>
+count = 0
+
+while count &lt; 3:
+    print(count)
+    count += 1
+</code></pre>
+
+<hr>
+
+<h2>🧠 III. Functions and Advanced Techniques</h2>
+
+<h3>🔹 1. Defining and Using Functions</h3>
+
+<h4>🛠️ Function (def)</h4>
+
+<p>
+A <strong>function</strong> is a reusable block of code designed to perform a
+specific task. Functions improve code readability, reduce repetition,
+and make programs easier to maintain.
+</p>
+
+<pre><code>
+def greet(name):
+    """This function greets the person passed as a parameter."""
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+</code></pre>
+
+<hr>
+
+<p align="center">
+✨ <strong>Happy Coding!</strong> ✨<br>
+📘 Learn • 💻 Practice • 🚀 Build
+</p>
+
+
 
 
 
