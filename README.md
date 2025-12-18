@@ -399,5 +399,133 @@ meaning elements can be modified.
 <pre><code>list1 = [1,2,3]
 list2 = list1.copy()</code></pre>
 
+<h2>4.3 Tuple (<code>tuple</code>)</h2>
+
+<h3>Definition</h3>
+<p>
+A <strong>tuple</strong> is an <strong>ordered, immutable</strong> collection of elements.
+Once created, its values cannot be changed. Tuples are faster than lists and
+can be used as <strong>dictionary keys</strong> or <strong>set elements</strong>.
+</p>
+
+<h3>Example</h3>
+<pre><code>numbers = (10, 20, 30, 20)</code></pre>
+
+<h3>Common Tuple Methods</h3>
+<pre><code>numbers.index(20)   # Output: 1
+numbers.count(20)   # Output: 2</code></pre>
+
+<h3>Built-in Functions with Tuples</h3>
+<pre><code>len(numbers)        # Output: 4
+sorted(numbers)     # Output: [10, 20, 20, 30]</code></pre>
+
+<h3>Immutability Example</h3>
+<pre><code>numbers[0] = 100    # Error: TypeError</code></pre>
+
+<hr>
+
+<h2>4.4 Set (<code>set</code>)</h2>
+
+<h3>Definition</h3>
+<p>
+A <strong>set</strong> is a <strong>mutable, unordered</strong> collection of
+<strong>unique</strong> elements. It is mainly used for membership testing
+and mathematical set operations.
+</p>
+
+<h3>Example</h3>
+<pre><code>colors = {"red", "blue", "green"}</code></pre>
+
+<h3>Adding &amp; Removing Elements</h3>
+<pre><code>colors.add("yellow")
+colors.remove("blue")
+colors.discard("black")
+colors.pop()
+colors.clear()</code></pre>
+
+<h3>Set Operations</h3>
+<pre><code>A = {1, 2, 3}
+B = {3, 4, 5}
+
+A.union(B)
+A.intersection(B)
+A.difference(B)
+A.symmetric_difference(B)</code></pre>
+
+<h3>Set Comparisons</h3>
+<pre><code>A.issubset(B)
+A.issuperset(B)
+A.isdisjoint(B)</code></pre>
+
+<hr>
+
+<h2>4.5 Dictionary (<code>dict</code>)</h2>
+
+<h3>Definition</h3>
+<p>
+A <strong>dictionary</strong> is a <strong>mutable collection</strong> that stores
+data as <strong>key-value pairs</strong>. Keys must be unique and immutable,
+while values can be any data type.
+</p>
+
+<h3>Example</h3>
+<pre><code>student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python"
+}</code></pre>
+
+<h3>Accessing Dictionary Values</h3>
+<pre><code>student["name"]
+student.get("age")
+student.get("grade", "N/A")</code></pre>
+
+<h3>Dictionary Views</h3>
+<pre><code>student.keys()
+student.values()
+student.items()</code></pre>
+
+<h3>Modifying Dictionary</h3>
+<pre><code>student.update({"age": 21})
+student.pop("course")
+student.setdefault("grade", "A")
+student.popitem()</code></pre>
+
+<h3>Creating Dictionary Using <code>fromkeys()</code></h3>
+<pre><code>keys = ("a", "b", "c")
+dict.fromkeys(keys, 0)</code></pre>
+
+<hr>
+
+<h2>Quick Summary</h2>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Type</th>
+    <th>Ordered</th>
+    <th>Mutable</th>
+    <th>Unique Elements</th>
+  </tr>
+  <tr>
+    <td>Tuple</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Set</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Dictionary</td>
+    <td>Yes (keys)</td>
+    <td>Yes</td>
+    <td>Yes (keys)</td>
+  </tr>
+</table>
+
+
 
 
