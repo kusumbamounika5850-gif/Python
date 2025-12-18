@@ -596,6 +596,99 @@ while count &lt; 5:
 4 × (3 × (2 × (1 × 1)))
 = 24</code></pre>
 
+<h1>📌 Advantages and Disadvantages of Recursion</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Advantage ✅</th>
+      <th>Disadvantage ❌</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Readability</td>
+      <td>Leads to cleaner, more intuitive code for problems naturally defined recursively (e.g., tree traversals, mathematical sequences).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Complexity</td>
+      <td></td>
+      <td>Can be harder to trace and debug than iterative solutions.</td>
+    </tr>
+    <tr>
+      <td>Performance</td>
+      <td></td>
+      <td>Each recursive call adds a new stack frame, consuming more memory and potentially slowing execution.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>🌟 Functional Programming Concepts</h1>
+<p>Functional programming lets you write <strong>concise, expressive code</strong>, often when working with <strong>iterables</strong>.</p>
+
+<h2>1️⃣ Lambda Functions</h2>
+<p><strong>Definition:</strong> Small, anonymous functions defined using <code>lambda</code>.</p>
+<p><strong>Characteristics:</strong> Can take any number of arguments but only one expression.</p>
+<p><strong>Usage:</strong> Often used as arguments to higher-order functions like <code>map</code> and <code>filter</code>.</p>
+
+<pre><code># Lambda function to square a number
+square = lambda x: x * x
+print(square(5))  # Output: 25
+</code></pre>
+
+<h2>2️⃣ map()</h2>
+<p><strong>Definition:</strong> Applies a function to every item of an iterable and returns an iterator.</p>
+<p><strong>Usage:</strong> Transforming data.</p>
+
+<pre><code>numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # Output: [1, 4, 9, 16]
+</code></pre>
+
+<h2>3️⃣ filter()</h2>
+<p><strong>Definition:</strong> Constructs an iterator from elements of an iterable for which a function returns True.</p>
+<p><strong>Usage:</strong> Selecting a subset of data.</p>
+
+<pre><code>numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # Output: [2, 4, 6]
+</code></pre>
+
+<h2>4️⃣ reduce() (from functools)</h2>
+<p><strong>Definition:</strong> Applies a function cumulatively to items of an iterable, reducing it to a single value.</p>
+<p><strong>Usage:</strong> Aggregation.</p>
+
+<pre><code>from functools import reduce
+
+numbers = [1, 2, 3, 4]
+sum_total = reduce(lambda x, y: x + y, numbers)
+print(sum_total)  # Output: 10
+</code></pre>
+
+<h1>🧩 Comprehensions</h1>
+<p><strong>Definition:</strong> Concise, readable, and efficient way to create data structures. Preferred over loops for simple creation tasks.</p>
+
+<h2>1️⃣ List Comprehensions</h2>
+<pre><code># Creating a list of squares
+squares = [x**2 for x in range(10)]
+print(squares)  # Output: [0, 1, 4, 9, ..., 81]
+
+# List with condition
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+print(even_squares)  # Output: [0, 4, 16, 36, 64]
+</code></pre>
+
+<h2>2️⃣ Dictionary Comprehensions</h2>
+<pre><code>names = ['Alice', 'Bob', 'Charlie']
+name_lengths = {name: len(name) for name in names}
+print(name_lengths)  # Output: {'Alice': 5, 'Bob': 3, 'Charlie': 7}
+</code></pre>
+
+<p>✅ <strong>Tip:</strong> Use recursion for naturally recursive problems, functional tools for concise data manipulation, and comprehensions for readable, one-liner data creation.</p>
+
+
 
 
 
