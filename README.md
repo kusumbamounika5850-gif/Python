@@ -688,6 +688,216 @@ print(name_lengths)  # Output: {'Alice': 5, 'Bob': 3, 'Charlie': 7}
 
 <p>✅ <strong>Tip:</strong> Use recursion for naturally recursive problems, functional tools for concise data manipulation, and comprehensions for readable, one-liner data creation.</p>
 
+<hr>
+
+<h2>📁 FILE HANDLING IN PYTHON</h2>
+<p>File handling is used to <b>create, read, write, and append</b> data in files.</p>
+
+<h3>✍️ Write Mode (<code>w</code>)</h3>
+<p><b>Definition:</b> Creates a new file or overwrites an existing file.</p>
+
+<pre><code>
+file = open("data.txt", "w")
+file.write("Hello Python")
+file.close()
+</code></pre>
+
+<ul>
+  <li>If file exists → old data is deleted</li>
+  <li>If file does not exist → new file is created</li>
+</ul>
+
+<hr>
+
+<h3>➕ Append Mode (<code>a</code>)</h3>
+<p><b>Definition:</b> Adds data at the end of the file.</p>
+
+<pre><code>
+file = open("data.txt", "a")
+file.write("\nWelcome to file handling")
+file.close()
+</code></pre>
+
+<p>✔ Old data remains safe</p>
+
+<hr>
+
+<h3>📖 Read Mode (<code>r</code>)</h3>
+<p><b>Definition:</b> Reads data from an existing file.</p>
+
+<pre><code>
+file = open("data.txt", "r")
+print(file.read())
+file.close()
+</code></pre>
+
+<p>⚠️ Error if file does not exist</p>
+
+<hr>
+
+<h2>🧾 JSON FILE HANDLING</h2>
+<p>JSON stands for <b>JavaScript Object Notation</b>.  
+It is used for data storage and exchange.</p>
+
+<h3>💾 json.dump()</h3>
+<p><b>Definition:</b> Writes Python data into a JSON file.</p>
+
+<pre><code>
+import json
+
+data = {"name": "Rahul", "age": 22}
+
+with open("data.json", "w") as file:
+    json.dump(data, file)
+</code></pre>
+
+<hr>
+
+<h3>📂 json.load()</h3>
+<p><b>Definition:</b> Reads data from a JSON file.</p>
+
+<pre><code>
+import json
+
+with open("data.json", "r") as file:
+    data = json.load(file)
+
+print(data)
+</code></pre>
+
+<hr>
+
+<h3>🔄 json.dumps()</h3>
+<p><b>Definition:</b> Converts Python object into a JSON string.</p>
+
+<pre><code>
+import json
+
+data = {"city": "Delhi"}
+json_string = json.dumps(data)
+print(json_string)
+</code></pre>
+
+<hr>
+
+<h3>🔁 json.loads()</h3>
+<p><b>Definition:</b> Converts JSON string into Python object.</p>
+
+<pre><code>
+import json
+
+json_string = '{"city": "Delhi"}'
+data = json.loads(json_string)
+print(data)
+</code></pre>
+
+<hr>
+
+<h2>⚠️ EXCEPTION HANDLING IN PYTHON</h2>
+<p>Exceptions are runtime errors that stop program execution.</p>
+
+<h3>❌ SyntaxError</h3>
+<p><b>Definition:</b> Incorrect Python syntax.</p>
+
+<pre><code>
+print("Hello"
+</code></pre>
+
+<hr>
+
+<h3>➗ ZeroDivisionError</h3>
+<p><b>Definition:</b> Division by zero.</p>
+
+<pre><code>
+print(10 / 0)
+</code></pre>
+
+<hr>
+
+<h3>🔤 NameError</h3>
+<p><b>Definition:</b> Variable not defined.</p>
+
+<pre><code>
+print(x)
+</code></pre>
+
+<hr>
+
+<h3>🔢 ValueError</h3>
+<p><b>Definition:</b> Correct type but invalid value.</p>
+
+<pre><code>
+int("abc")
+</code></pre>
+
+<hr>
+
+<h3>📁 FileNotFoundError</h3>
+<p><b>Definition:</b> File does not exist.</p>
+
+<pre><code>
+open("missing.txt", "r")
+</code></pre>
+
+<hr>
+
+<h3>📐 IndentationError</h3>
+<p><b>Definition:</b> Incorrect indentation.</p>
+
+<pre><code>
+if True:
+print("Hello")
+</code></pre>
+
+<hr>
+
+<h2>🛡️ Try–Except Example</h2>
+
+<pre><code>
+try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+</code></pre>
+
+<hr>
+
+<h2>📊 SUMMARY</h2>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Topic</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>w</td>
+    <td>Write / Overwrite</td>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>Append Data</td>
+  </tr>
+  <tr>
+    <td>r</td>
+    <td>Read File</td>
+  </tr>
+  <tr>
+    <td>dump / load</td>
+    <td>JSON File Handling</td>
+  </tr>
+  <tr>
+    <td>dumps / loads</td>
+    <td>JSON String Handling</td>
+  </tr>
+  <tr>
+    <td>Exceptions</td>
+    <td>Error Handling</td>
+  </tr>
+</table>
+
+<hr>
+
+
 
 
 
