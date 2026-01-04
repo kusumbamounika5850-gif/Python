@@ -1100,7 +1100,7 @@ class Account:
   <td>Encapsulation</td>
   <td>Data protection</td>
 </tr>
-</table>.
+</table>
 
 
 
