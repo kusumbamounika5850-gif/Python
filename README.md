@@ -1100,9 +1100,9 @@ class Account:
   <td>Encapsulation</td>
   <td>Data protection</td>
 </tr>
-</table>
+</table>.
 
-<p align="center">✨ Happy Coding with Python OOP ✨</p>
+
 
 
 
