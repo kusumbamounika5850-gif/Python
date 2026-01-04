@@ -896,6 +896,214 @@ except ZeroDivisionError:
 </table>
 
 <hr>
+<h1 align="center">🐍 OOPS Concepts in Python</h1>
+<hr>
+
+<h2>🧱 Class</h2>
+<p>
+<b>Definition:</b> A class is a blueprint or template used to create objects.  
+It defines variables and methods.
+</p>
+
+<pre><code>
+class Student:
+    pass
+</code></pre>
+
+<hr>
+
+<h2>🧸 Object</h2>
+<p>
+<b>Definition:</b> An object is an instance of a class.
+</p>
+
+<pre><code>
+s1 = Student()
+</code></pre>
+
+<hr>
+
+<h2>🔑 self</h2>
+<p>
+<b>Definition:</b> <code>self</code> refers to the current object of the class.  
+It is used to access variables and methods inside the class.
+</p>
+
+<pre><code>
+class Student:
+    def show(self):
+        print("Hello Student")
+</code></pre>
+
+<hr>
+
+<h2>🛠️ Constructor (__init__) and Types</h2>
+
+<h3>🔹 Default Constructor</h3>
+<pre><code>
+class Student:
+    def __init__(self):
+        print("Default Constructor")
+</code></pre>
+
+<h3>🔹 Parameterized Constructor</h3>
+<pre><code>
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Amit")
+</code></pre>
+
+<hr>
+
+<h2>📦 Variables and Functions in Class</h2>
+
+<h3>🔹 Variables</h3>
+<ul>
+  <li><b>Instance Variable</b> – Specific to object</li>
+  <li><b>Class Variable</b> – Common to all objects</li>
+</ul>
+
+<pre><code>
+class Student:
+    college = "ABC College"
+
+    def __init__(self, name):
+        self.name = name
+</code></pre>
+
+<h3>🔹 Functions (Methods)</h3>
+<pre><code>
+class Student:
+    def show(self):
+        print("This is a method")
+</code></pre>
+
+<hr>
+
+<h2>🧬 Inheritance</h2>
+<p>
+<b>Definition:</b> Inheritance allows a child class to acquire properties and methods of a parent class.
+</p>
+
+<pre><code>
+class Parent:
+    def show(self):
+        print("Parent class")
+
+class Child(Parent):
+    pass
+
+c = Child()
+c.show()
+</code></pre>
+
+<hr>
+
+<h2>🎭 Polymorphism</h2>
+<p>
+<b>Definition:</b> Polymorphism means one method name with different behaviors.
+</p>
+
+<pre><code>
+class Bird:
+    def sound(self):
+        print("Bird makes sound")
+
+class Dog(Bird):
+    def sound(self):
+        print("Dog barks")
+
+d = Dog()
+d.sound()
+</code></pre>
+
+<hr>
+
+<h2>🧠 Abstraction</h2>
+<p>
+<b>Definition:</b> Abstraction hides implementation details and shows only essential features.
+</p>
+
+<pre><code>
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(Shape):
+    def area(self):
+        print("Area of square")
+</code></pre>
+
+<hr>
+
+<h2>🔒 Encapsulation</h2>
+<p>
+<b>Definition:</b> Encapsulation binds data and methods together and restricts direct access.
+</p>
+
+<pre><code>
+class Account:
+    def __init__(self):
+        self.__balance = 1000
+
+    def show_balance(self):
+        print(self.__balance)
+</code></pre>
+
+<hr>
+
+<h2>🌟 Summary</h2>
+
+<table border="1" cellpadding="8">
+<tr>
+  <th>Icon</th>
+  <th>Concept</th>
+  <th>Meaning</th>
+</tr>
+<tr>
+  <td>🧱</td>
+  <td>Class</td>
+  <td>Blueprint</td>
+</tr>
+<tr>
+  <td>🧸</td>
+  <td>Object</td>
+  <td>Instance of class</td>
+</tr>
+<tr>
+  <td>🔑</td>
+  <td>self</td>
+  <td>Current object</td>
+</tr>
+<tr>
+  <td>🧬</td>
+  <td>Inheritance</td>
+  <td>Parent → Child</td>
+</tr>
+<tr>
+  <td>🎭</td>
+  <td>Polymorphism</td>
+  <td>Many forms</td>
+</tr>
+<tr>
+  <td>🧠</td>
+  <td>Abstraction</td>
+  <td>Hide details</td>
+</tr>
+<tr>
+  <td>🔒</td>
+  <td>Encapsulation</td>
+  <td>Data protection</td>
+</tr>
+</table>
+
+<p align="center">✨ Happy Coding with Python OOP ✨</p>
+
 
 
 
