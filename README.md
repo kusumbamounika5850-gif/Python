@@ -15,6 +15,7 @@ Python programming concepts. It is structured for clarity, quick review, and por
 <h3>🔹 Data Types</h3>
 <p><strong>Definition:</strong><br>
 Data types classify the kind of data a variable can store.
+
 </p>
 
 <ul>
