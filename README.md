@@ -1102,6 +1102,58 @@ class Account:
   <td>Data protection</td>
 </tr>
 </table>
+<h1>🏭 Production Python: Multiprocessing vs Multithreading</h1>
+
+<p>
+In <strong>production Python</strong>, choosing between
+<strong>multithreading</strong> and <strong>multiprocessing</strong> impacts:
+</p>
+
+<ul>
+  <li>⚡ Performance</li>
+  <li>🧠 CPU utilization</li>
+  <li>🔒 Stability & isolation</li>
+  <li>📈 Scalability</li>
+</ul>
+
+<p>
+The <strong>GIL (Global Interpreter Lock)</strong> is the key reason this decision matters.
+</p>
+
+<hr/>
+
+<h2>🧵 Multithreading</h2>
+
+<h3>🧩 Definition</h3>
+<p>
+<strong>Multithreading</strong> runs multiple threads within the <strong>same process</strong>,
+sharing the same memory space.
+</p>
+
+<blockquote>
+In Python, threads do <strong>NOT</strong> run CPU-bound code in parallel due to the GIL.
+</blockquote>
+
+<h3>🎯 Best For</h3>
+<ul>
+  <li>✅ I/O-bound tasks</li>
+  <li>🌐 Network calls</li>
+  <li>📁 File I/O</li>
+  <li>🔌 API requests</li>
+  <li>🗄️ Database queries</li>
+</ul>
+
+<h3>🧠 Mental Model</h3>
+<p>
+🧑‍💻 One brain (CPU)<br/>
+👥 Many hands (threads)<br/>
+⛔ Only one hand thinks at a time (GIL)
+</p>
+
+<h3>🧪 Example (I/O-Bound)</h3>
+
+<pre><code class="language
+
 
 
 
